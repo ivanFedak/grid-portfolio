@@ -1,0 +1,37 @@
+.price
+    @include adaptiv-value('padding-top', 20, 0, 1)
+    @include adaptiv-value('padding-bottom', 50, 20, 1)
+    &__container
+    &__block-header
+    &__wrapper
+    &__item 
+        position: relative
+        padding-left: 20px
+        &::before
+            position: absolute
+            content: ''
+            width: 15px
+            height: 15px
+            background: #FFA501
+            left: -5px
+            top: 3px
+            border-radius: 50px
+    &__body
+        &:not(:last-child)
+            margin-bottom: 6px
+    &__title
+        font-weight: bold
+        font-size: 14px
+        line-height: 150%
+        color: #000000
+    &__cost
+        font-weight: bold
+        font-size: 14px
+        line-height: 150%
+        color: #000000
+    &__text
+        font-weight: 500
+        font-size: 12px
+        line-height: 150%   
+        color: #000000
+

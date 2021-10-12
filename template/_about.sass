@@ -1,0 +1,83 @@
+.about 
+    @include adaptiv-value('padding-top', 120, 30, 1)
+    @include adaptiv-value('padding-bottom', 80, 20, 1)
+    &__container 
+    &__body
+        display: grid
+        grid-template-columns: 1fr 2fr
+        @include adaptiv-value('column-gap', 70, 20, 1)
+    &__image 
+    &__info 
+    &__block-header 
+    &__text 
+        padding-top: 25px
+        font-weight: 500
+        font-size: 14px
+        line-height: 150%
+        color: #000000
+    &__option 
+        padding-top: 40px
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))
+        column-gap: 50px
+        grid-row-gap: 20px
+    &__item 
+    
+
+		
+.item-about
+    display: flex
+    &__icon 
+        position: relative
+        display: flex
+        &::before
+            content: ''
+            position: absolute
+            width: 36px
+            height: 36px
+            background: $orange
+            border-radius: 50%
+            z-index: -1
+    &__svgs
+        &::before
+            font-size: 26px
+            position: relative
+            top: 17px
+            right: -10px
+    &__body
+        padding-left: 26px
+    &__title
+        font-weight: bold
+        font-size: 14px
+        line-height: 150%
+        color: #000000
+        &:not(:last-child)
+            margin-bottom: 6px
+    &__text 
+        font-weight: 500
+        font-size: 12px
+        line-height: 150%
+        color: #000000
+
+
+
+
+
+
+
+
+
+
+.about 
+    .block-header
+        justify-content: start
+        flex-direction: column
+        align-items: start
+        text-align: left
+        &__top
+            align-items: start
+            justify-content: center 
+        &__title
+            &::after
+                content: ''
+                display: none
